@@ -10,11 +10,12 @@ php:
   - 5.6
   - 7.0
   - 7.1
+  - 7.2
   - nightly
 
 install:
   - ./travis-init.sh
-  - composer install -n
+  - composer update -n
 
 script:
   - ./vendor/bin/phpunit --coverage-text
